@@ -1,0 +1,14 @@
+I"(function() {
+  $.fn.extend({
+    integrateDatepicker: function(selector) {
+      selector = selector || '.datepicker';
+      return $(this).find(selector).datepicker();
+    }
+  });
+
+  $(document).ready(function() {
+    return $('body').integrateDatepicker();
+  });
+
+}).call(this);
+:ET

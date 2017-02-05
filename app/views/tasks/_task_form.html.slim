@@ -1,0 +1,8 @@
+.modal-header
+   h1
+    = task.new_record? ? 'New Task' : "Editing task #{task.title}"
+= simple_form_for task, class: 'clearfix', remote: true do |f|
+  .modal-body
+    = f.input :title, placeholder: "Title", label: false
+  .modal-footer
+    = f.submit 'Save', class: 'btn btn-primary'

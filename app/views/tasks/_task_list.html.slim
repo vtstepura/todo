@@ -1,0 +1,29 @@
+- if tasks.empty?
+   span.text-warning There are no tasks!
+- else
+   table.table.table-hover.table-bordered
+     thead
+       tr
+         th
+         th Title
+         th
+     tbody
+      - tasks.each do |task|
+         tr
+          - if task.completed?
+            td
+              = link_to complete_task_path(task), remote: true, method: :patch
+                i.icon-thumbs-down
+            td
+              strong.completed = task.title
+          - else
+            td
+              = link_to complete_task_path(task), remote: true, method: :patch
+                i.icon-thumbs-up
+            td
+              strong = task.title
+          td
+            = link_to task_path(task), remote: true, method: :delete
+              i.icon-remove
+            = link_to edit_task_path(task), remote: true
+              i.icon-edit

@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+  before_action :tasks, only: :index
 
   def new
     @task = Task.new
@@ -39,5 +40,15 @@ class TasksController < ApplicationController
 
   def task_params
     params.require(:task).permit(:title, :completed).merge(user: current_user)
+  end
+
+  def tasks
+    if params[:status] == 'true'
+      @tasks = current_user.tasks.completed
+    elsif params[:status] == 'false'
+      @tasks = current_user.tasks.active
+    else
+      @tasks = current_user.tasks
+    end
   end
 end

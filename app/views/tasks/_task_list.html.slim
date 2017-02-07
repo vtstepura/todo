@@ -1,6 +1,10 @@
-=> link_to 'all', tasks_path, remote: true
-=> link_to 'active', tasks_path(status: false), remote: true
-=> link_to 'completed', tasks_path(status: true),remote: true
+.btn-group data-toggle="buttons"
+  label.btn.btn-primary
+    => link_to 'all', tasks_path, remote: true
+  label.btn.btn-primary
+    => link_to 'active', tasks_path(status: false), remote: true
+  label.btn.btn-primary
+    => link_to 'completed', tasks_path(status: true),remote: true
 - if tasks.empty?
    span.text-warning There are no tasks!
 - else

@@ -20,14 +20,48 @@
   text-decoration: line-through;
   text-align: center;
   opacity: .4;
+
 }
 
 .table-bordered, .table-bordered thead tr > th, .table-bordered tbody tr > td {
   text-align: center;
   border: none;
   font-size: 14pt;
+  word-wrap: break-word;
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .modal-body {
   text-align: center;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+ .offset4:first-child {
+    text-align: center;
+    height: auto;
+    font-size: 0.9em;
+  }
+  .hero-unit {
+   width:auto;;
+   margin: auto;
+   position: relative;
+   height: auto;
+  }
+
+  .table-bordered, .table-bordered thead tr > th, .table-bordered tbody tr > td {
+    text-align: center;
+    border: none;
+    font-size: 14pt;
+    margin: auto;
+    width: auto;
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+
+  h1 {
+    text-align: center;
+  }
 }

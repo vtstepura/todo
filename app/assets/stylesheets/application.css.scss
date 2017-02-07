@@ -20,7 +20,6 @@
   text-decoration: line-through;
   text-align: center;
   opacity: .4;
-
 }
 
 .table-bordered, .table-bordered thead tr > th, .table-bordered tbody tr > td {
@@ -37,18 +36,24 @@
   text-align: center;
 }
 
+.row-fluid .offset1:first-child {
+  margin-left: 0;
+}
 
+.row-fluid .span10{
+  width: 100%;
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
- .offset4:first-child {
+  .offset4:first-child {
     text-align: center;
     height: auto;
     font-size: 0.9em;
   }
   .hero-unit {
-   width:auto;;
-   margin: auto;
-   position: relative;
-   height: auto;
+    width:auto;;
+    margin: auto;
+    position: relative;
+    height: auto;
   }
 
   .table-bordered, .table-bordered thead tr > th, .table-bordered tbody tr > td {

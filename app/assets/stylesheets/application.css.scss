@@ -50,6 +50,7 @@ button.btn, input[type="submit"].btn{
   width: 100%;
   text-align: center;
 }
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
   .offset4:first-child {
     text-align: center;
@@ -61,6 +62,7 @@ button.btn, input[type="submit"].btn{
     margin: auto;
     position: relative;
     height: auto;
+    padding: 40px;
   }
 
   .table-bordered, .table-bordered thead tr > th, .table-bordered tbody tr > td {
@@ -87,4 +89,8 @@ button.btn, input[type="submit"].btn{
     margin-right: 500px;
     margin-left: 90px;
   }
+  textarea, input[type="password"], input[type="email"]{
+    width: 100%;
+  }
+
 }

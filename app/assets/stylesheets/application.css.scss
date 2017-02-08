@@ -50,6 +50,15 @@ button.btn, input[type="submit"].btn{
   width: 100%;
   text-align: center;
 }
+.form-actions {
+    padding: 0px;
+}
+h2{
+  text-align: center;
+}
+div {
+  text-align: center;
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
   .offset4:first-child {

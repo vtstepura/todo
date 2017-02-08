@@ -46,6 +46,10 @@
 .btn a {
   color: white;
 }
+button.btn, input[type="submit"].btn{
+  width: 100%;
+  text-align: center;
+}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
   .offset4:first-child {
     text-align: center;
@@ -63,13 +67,24 @@
     text-align: center;
     border: none;
     font-size: 14pt;
-    margin: auto;
-    width: auto;
+    word-wrap: break-word;
     table-layout: fixed;
+    width: 100px;
     word-wrap: break-word;
   }
 
   h1 {
     text-align: center;
+  }
+  button.btn{
+    width: 100%;
+    text-align: center;
+  }
+  .btn-group:first-child {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-right: 500px;
+    margin-left: 90px;
   }
 }
